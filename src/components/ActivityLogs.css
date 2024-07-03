@@ -1,0 +1,58 @@
+.activity-logs-container {
+    padding: 20px;
+    background-color: var(--content-background-color);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: var(--text-color);
+}
+
+.logs-list {
+    margin-top: 20px;
+}
+
+.log-entry {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: var(--input-background-color);
+    color: var(--input-text-color);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 0.9em; /* Reduce font size for compactness */
+}
+
+.log-user {
+    font-weight: bold;
+    color: var(--link-color);
+    margin-right: 10px;
+}
+
+.log-action {
+    margin-right: 10px;
+    color: var(--text-color);
+}
+
+.log-timestamp {
+    font-size: 0.8em;
+    color: gray;
+    margin-right: 10px;
+}
+
+.log-details {
+    margin-right: 10px;
+    color: var(--text-color);
+    flex-grow: 1; /* Allow details to take up remaining space */
+}
+
+.log-entity {
+    color: var(--text-color);
+    font-style: italic;
+}
+
+h2 {
+    color: var(--text-color);
+    margin-bottom: 20px;
+}

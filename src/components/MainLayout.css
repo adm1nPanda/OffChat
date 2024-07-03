@@ -14,7 +14,7 @@
     --text-color: #000000; /* Default text color for light mode */
 }
 
-body.dark-mode {
+.dark-mode {
     --link-color: #61dafb;
     --link-hover-color: #21a1f1;
     --navbar-background-color: #282c34;
@@ -30,11 +30,18 @@ body.dark-mode {
     --text-color: #ffffff; /* Default text color for dark mode */
 }
 
-html, body, #root {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: var(--background-color);
-    color: var(--text-color);
+body {
+    background-color: var(--content-background-color);
+    color: var(--text-color); /* Apply text color */
+}
+
+body.dark-mode {
+    background-color: var(--content-background-color);
+    color: var(--text-color); /* Apply text color */
+}
+
+.main-layout {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
 }

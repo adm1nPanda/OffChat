@@ -1,0 +1,94 @@
+.pinned-messages{
+    padding: 10px;
+}
+
+.chat-messages {
+    flex-grow: 1;
+    padding: 10px;
+    overflow-y: auto;
+    background-color: var(--chat-messages-background-color);
+    border: 1px solid #ccc;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px; 
+    border-radius: 8px; 
+    flex-direction: column;
+    min-height: 80vh;
+}
+
+.chat-message {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.typing-indicator {
+    font-style: italic;
+    color: var(--text-color);
+    margin-bottom: 10px;
+}
+
+.chat-input {
+    display: flex;
+    padding: 10px;
+    padding-top: 25px;
+    background-color: var(--input-background-color);
+    border-top: 1px solid #ccc;
+    margin: 20px 10px 10px 10px; /* Add margin to fit within the app layout */
+    border-radius: 0 0 8px 8px; /* Match border radius with chat-messages */
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    background-color: var(--input-background-color);
+    color: var(--input-text-color);
+}
+
+.chat-input button {
+    padding: 10px 20px;
+    width: 10%;
+    background-color: var(--button-background-color);
+    color: var(--button-text-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.chat-input button:hover {
+    background-color: #0056b3;
+}
+
+.chat-message strong {
+    color: var(--input-text-color);
+}
+
+.chat-message code {
+    background-color: #f1f1f1;
+    padding: 2px 4px;
+    border-radius: 4px;
+    font-size: 0.9em;
+}
+
+.chat-message ul {
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+.chat-message li {
+    margin-bottom: 5px;
+}
+
+h1 {
+    color: var(--input-text-color);
+}
+
+.timestamp {
+    font-size: 0.8em;
+    color: gray;
+    margin-left: 10px;
+    white-space: nowrap;
+}
