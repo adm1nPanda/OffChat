@@ -7,6 +7,7 @@ import Chat from './components/Chat';
 import Incidents from './components/Incidents';
 import ActivityLogs from './components/ActivityLogs';
 import MainLayout from './components/MainLayout';
+import Secrets from './components/Secrets';
 
 const socket = io('http://localhost:5055');
 
@@ -52,6 +53,9 @@ function App() {
                         isAuthenticated ? <ActivityLogs /> : <Navigate to="/login" />
                     }
                 />
+                <Route path="/secrets" element={
+                        isAuthenticated ? <Secrets /> : <Navigate to="/secrets" />
+                    } />
             </Routes>
         </MainLayout>
     );

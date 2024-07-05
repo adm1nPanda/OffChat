@@ -257,12 +257,10 @@ function Chat({ messages, sendMessage, logout }) {
     return (
         <div>
             <div className="pinned-messages">
-                <h5>Pinned Messages</h5>
+                <p><b>Pinned :</b></p>
                 {pinnedMessages.map((msg, index) => (
                     <div key={index}>
-                        <div>
-                            <strong>{msg.username}: </strong>{msg.content}
-                        </div>
+                        {msg.content}
                     </div>
                 ))}
             </div>
