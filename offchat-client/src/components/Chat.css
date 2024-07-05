@@ -1,9 +1,9 @@
 .pinned-messages{
-    padding: 10px;
+    padding-left: 20px;
 }
 
 .chat-messages {
-    flex-grow: 1;
+    flex-grow: 2;
     padding: 10px;
     overflow-y: auto;
     background-color: var(--chat-messages-background-color);
@@ -12,7 +12,7 @@
     margin: 20px; 
     border-radius: 8px; 
     flex-direction: column;
-    min-height: 80vh;
+    min-height: 70vh;
 }
 
 .chat-message {

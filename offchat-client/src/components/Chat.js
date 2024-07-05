@@ -3,7 +3,7 @@ import axios from 'axios';
 import io from 'socket.io-client';
 import './Chat.css';
 
-const socket = io('http://localhost:5000');
+const socket = io('http://localhost:5055');
 
 function Chat({ messages, sendMessage, logout }) {
     const [localMessages, setLocalMessages] = useState(messages);
@@ -17,7 +17,7 @@ function Chat({ messages, sendMessage, logout }) {
         // Fetch existing messages from the server when the component mounts
         const fetchMessages = async () => {
             try {
-                const response = await axios.get('http://localhost:5000/api/messages');
+                const response = await axios.get('http://localhost:5055/api/messages');
                 setLocalMessages(response.data);
             } catch (error) {
                 console.error('Error fetching messages:', error);
@@ -26,7 +26,7 @@ function Chat({ messages, sendMessage, logout }) {
 
         const fetchPinnedMessages = async () => {
             try {
-                const response = await axios.get('http://localhost:5000/api/pinned-messages');
+                const response = await axios.get('http://localhost:5055/api/pinned-messages');
                 setPinnedMessages(response.data);
             } catch (error) {
                 console.error('Error fetching pinned messages:', error);

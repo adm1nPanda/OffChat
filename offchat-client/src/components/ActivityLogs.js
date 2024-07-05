@@ -11,7 +11,7 @@ const ActivityLogs = () => {
 
     const fetchActivityLogs = async () => {
         try {
-            const response = await axios.get('http://localhost:5000/api/activitylogs');
+            const response = await axios.get('http://localhost:5055/api/activitylogs');
             setLogs(response.data);
         } catch (error) {
             console.error('Error fetching activity logs:', error);

@@ -269,7 +269,7 @@ io.on('connection', (socket) => {
 // Sync database and start server
 sequelize.sync()
     .then(() => {
-        const PORT = process.env.PORT || 5000;
+        const PORT = process.env.PORT || 5055;
         server.listen(PORT, () => console.log(`Server running on port ${PORT}`));
     })
     .catch((err) => console.log('Error syncing database:', err));

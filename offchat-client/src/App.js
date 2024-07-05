@@ -8,7 +8,7 @@ import Incidents from './components/Incidents';
 import ActivityLogs from './components/ActivityLogs';
 import MainLayout from './components/MainLayout';
 
-const socket = io('http://localhost:5000');
+const socket = io('http://localhost:5055');
 
 function App() {
     const [messages] = useState([]);

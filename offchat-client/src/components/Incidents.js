@@ -21,7 +21,7 @@ const Incidents = () => {
 
     const fetchIncidents = async () => {
         try {
-            const response = await axios.get('http://localhost:5000/api/incidents');
+            const response = await axios.get('http://localhost:5055/api/incidents');
             setIncidents(response.data);
         } catch (error) {
             console.error('Error fetching incidents:', error);
@@ -31,7 +31,7 @@ const Incidents = () => {
     const handleCreateIncident = async () => {
         if (ttp.trim() !== '' ) {
             try {
-                const response = await axios.post('http://localhost:5000/api/incidents', {
+                const response = await axios.post('http://localhost:5055/api/incidents', {
                     ttp,
                     description,
                     severity,
@@ -50,7 +50,7 @@ const Incidents = () => {
 
     const handleDeleteIncident = async (id) => {
         try {
-            await axios.delete(`http://localhost:5000/api/incidents/${id}`);
+            await axios.delete(`http://localhost:5055/api/incidents/${id}`);
             setIncidents(incidents.filter(incident => incident.id !== id));
         } catch (error) {
             console.error('Error deleting incident:', error);
@@ -59,7 +59,7 @@ const Incidents = () => {
 
     const handleSelectIncident = async (id) => {
         try {
-            const response = await axios.get(`http://localhost:5000/api/incidents/${id}`);
+            const response = await axios.get(`http://localhost:5055/api/incidents/${id}`);
             setSelectedIncident(response.data);
         } catch (error) {
             console.error('Error retrieving incident:', error);
