@@ -20,26 +20,38 @@ OffChat is a secure chat application designed for offensive security teams to co
   
 ### Steps  
 1. Clone the Repository  
-`git clone https://github.com/yourusername/offchat.git  
-cd offchat  `  
+```
+git clone https://github.com/yourusername/offchat.git  
+cd offchat  
+```  
   
 2. Set Up the Server  
 Navigate to the offchat-server directory and install the dependencies:  
-`cd offchat-server  
-npm install  `  
+```
+cd offchat-server  
+npm install  
+```  
 Create a .env file in the offchat-server directory and add your secret key and IV:  
-`SECRET_KEY=your_32_byte_hex_string_here  
-IV=your_16_byte_hex_string_here  `  
+```
+SECRET_KEY=your_32_byte_hex_string_here  
+IV=your_16_byte_hex_string_here  
+```  
 Start the server:  
-`npm start  `  
+```
+npm start  
+```  
 The server should now be running on http://localhost:5000  
   
 3. Set Up the Client  
 Open a new terminal and navigate to the offchat-client directory. Install the dependencies:  
-`cd ../offchat-client  
-npm install  `  
+```
+cd ../offchat-client  
+npm install  
+```  
 Start the client:  
-`npm start  `  
+```
+npm start  
+```  
 The client should now be running on http://localhost:3000  
   
 ## Usage  
