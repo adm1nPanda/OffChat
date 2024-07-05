@@ -1,71 +1,70 @@
-# OffChat - A chat app for Red Teams
+# OffChat  
+  
+OffChat is a secure chat application designed for offensive security teams to communicate during engagements. The app offers features to streamline evidence gathering, manage incidents, and track activities.  
+  
+## Features  
+  
+• Secure Messaging: End-to-end encrypted messaging between team members.  
+• Incident Management: Log and track security incidents with details such as TTP, description, severity, status, tags, and assigned user.  
+• Activity Logging: Automatically log user activities and actions during engagements.  
+• Dark Mode: Toggle between light and dark themes for better readability.  
+• Secret Management: Securely store and retrieve sensitive information like passwords and keys.  
+  
+## Installation  
+  
+### Prerequisites  
+  
+• Node.js (v14.x or later)  
+• npm (v6.x or later)  
+• sqlite  
+  
+### Steps  
+1. Clone the Repository  
+`git clone https://github.com/yourusername/offchat.git  
+cd offchat  `  
+  
+2. Set Up the Server  
+Navigate to the offchat-server directory and install the dependencies:  
+`cd offchat-server  
+npm install  `  
+Create a .env file in the offchat-server directory and add your secret key and IV:  
+`SECRET_KEY=your_32_byte_hex_string_here  
+IV=your_16_byte_hex_string_here  `  
+Start the server:  
+`npm start  `  
+The server should now be running on http://localhost:5000  
+  
+3. Set Up the Client  
+Open a new terminal and navigate to the offchat-client directory. Install the dependencies:  
+`cd ../offchat-client  
+npm install  `  
+Start the client:  
+`npm start  `  
+The client should now be running on http://localhost:3000  
+  
+## Usage  
+  
+1.	Register: Create a new account using the registration form.  
+2.	Login: Log in with your credentials.  
+3.	Chat: Start secure conversations with team members.  
+4.	Incidents: Log and track security incidents.  
+5.	Activity Logs: View activity logs to see user actions and activities.  
+6.	Toggle Theme: Switch between light and dark themes for better readability.  
+7.	Manage Secrets: Securely store and retrieve sensitive information.  
 
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Contributing  
+  
+1.	Fork the repository.  
+2.	Create a new branch (git checkout -b feature-branch).  
+3.	Make your changes.  
+4.	Commit your changes (git commit -am 'Add new feature').  
+5.	Push to the branch (git push origin feature-branch).  
+6.	Create a new Pull Request.  
+  
+## License  
+  
+This project is licensed under the MIT License.  
+  
+## Contact  
+  
+For any questions or suggestions, please contact dnc295@gmailcom.  
